@@ -1,5 +1,5 @@
 import { NextResponse, NextRequest } from 'next/server';
-import { getTransactions, addTransaction, deleteTransaction, setupDatabase } from '@/lib/db';
+import { getTransactions, addTransaction, deleteTransaction, setupDatabase } from '../../../lib/db';
 
 // İlk istekte veritabanını kurmayı dene
 setupDatabase().catch(err => console.error("Setup failed:", err));
